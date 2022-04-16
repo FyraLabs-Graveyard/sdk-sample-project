@@ -1,0 +1,7 @@
+data/com.example.MyProject.desktop.in
+data/com.example.MyProject.appdata.xml.in
+data/com.example.MyProject.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

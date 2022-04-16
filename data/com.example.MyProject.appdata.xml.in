@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>com.example.MyProject</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>MIT</project_license>
+  <name>My Project</name>
+  <summary>My Project Summary</summary>
+
+	<description>
+	  <p>My Description</p>
+	  <ul>
+	    <li>My List Item</li>
+	    <li>My Other List Item</li>
+	  </ul>
+	</description>
+
+  <launchable type="desktop-id">com.example.MyProject.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>My Caption</caption>
+      <image>https://tauos.co/hero.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://example.com</url>
+
+  <provides>
+    <binary>my-project</binary>
+  </provides>
+
+  <releases>
+    <release version="0.1.0" date="2022-04-15">
+      <description>
+        <p>Initial Release</p>
+      </description>
+    </release>
+  </releases>
+
+  <!-- Generate at https://odrs.gnome.org/oars -->
+  <content_rating type="oars-1.1" />
+</component>

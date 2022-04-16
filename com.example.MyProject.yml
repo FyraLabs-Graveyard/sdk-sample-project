@@ -1,0 +1,26 @@
+# This is the same ID that you've used in meson.build and other files
+app-id: com.example.MyProject
+
+# TODO: Use co.tauos.Platform and co.tauos.Sdk
+runtime: org.gnome.Platform
+runtime-version: '42'
+sdk: org.gnome.Sdk
+
+# This should match the exec line in your .desktop file
+command: my-project
+
+# Specify the kinds of permissions our app needs to run.
+finish-args:
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+
+# List all source code required to build your app
+modules:
+  - name: my-project
+    buildsystem: meson
+    config-opts:
+     - '--buildtype=release'
+    sources:
+      - type: dir
+        path: .
